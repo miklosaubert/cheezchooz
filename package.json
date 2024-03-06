@@ -1,0 +1,22 @@
+{
+  "name": "cheezchooz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run generateSchema && tsc",
+    "generateSchema": "ts-json-schema-generator --path src/cheese.ts --type Cheese --expose none --no-top-ref --out src/cheese-schema.json",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.20",
+    "ajv": "^8.12.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-json-schema-generator": "^1.5.0",
+    "typescript": "^5.3.3"
+  }
+}
